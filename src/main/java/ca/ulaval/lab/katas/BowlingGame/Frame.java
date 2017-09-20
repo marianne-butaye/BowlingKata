@@ -97,7 +97,7 @@ public class Frame {
         setStrike(true);
         setFrameFinished(true);
       }
-    } else if (rollNumber != FIRST_ROLL) {
+    } else {
       Roll previousRoll = rolls.get(rollNumber - 1);
       if (currentRoll.score() + previousRoll.score() == NUMBER_OF_PINS) {
         setSpare(true);
