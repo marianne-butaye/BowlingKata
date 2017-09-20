@@ -18,6 +18,10 @@ public class Game {
     }
   }
 
+  public int getNumberOfFrames() {
+    return frames.size();
+  }
+
   public boolean isFinished() {
     return frames.get(LAST_FRAME).isFrameFinished();
   }

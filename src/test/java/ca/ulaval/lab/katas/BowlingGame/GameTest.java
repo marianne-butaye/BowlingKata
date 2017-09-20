@@ -22,6 +22,11 @@ public class GameTest {
   }
 
   @Test
+  public void gameShouldHave10Frames() {
+    assertEquals(10, game.getNumberOfFrames());
+  }
+
+  @Test
   public void scoreShouldBeZeroAtGameStart() {
     assertEquals(0, game.score());
   }
